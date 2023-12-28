@@ -1,0 +1,29 @@
+.form {
+	max-width: 560px;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+
+	&__title {
+		color: var(--black);
+		font-family: Inter;
+		font-size: 45px;
+		font-weight: 700;
+		line-height: normal;
+	}
+
+	&__fields {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		align-items: center;
+	}
+}
