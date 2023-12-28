@@ -10,6 +10,7 @@
 @import './sass-utils/global';
 
 // components
+@import './components/overlay';
 @import './components/buttons.scss';
 @import './components/input';
 @import './components/search';
@@ -18,6 +19,7 @@
 @import './components/profile';
 @import './components/addCard';
 @import './components/testCard';
+@import './components/popup';
 
 // layouts
 @import './layout/header';
