@@ -18,6 +18,8 @@
 		background-color 220ms ease-in-out,
 		box-shadow 220ms ease-in-out;
 
+	text-align: left;
+
 	@include hover {
 		background-color: #f9fffd;
 		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
@@ -38,6 +40,7 @@
 		font-weight: 400;
 		line-height: normal;
 		transition: color 220ms ease-in-out;
+		@include text-shorten(5);
 	}
 
 	&__description {
@@ -46,5 +49,6 @@
 		font-size: 12px;
 		font-weight: 400;
 		line-height: normal;
+		@include text-shorten(3);
 	}
 }
