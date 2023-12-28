@@ -10,10 +10,8 @@
 
 	&_position {
 		padding-top: 100px;
+		@media screen and (max-width: 992px) {
+			padding-top: 30px;
+		}
 	}
-}
-
-.logo {
-	width: 204px;
-	height: 48px;
 }

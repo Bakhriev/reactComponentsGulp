@@ -17,8 +17,15 @@ body {
 }
 
 .logo {
-	display: block;
 	flex-shrink: 0;
+	&__img {
+		height: 48px;
+		width: 204px;
+		@media screen and (max-width: 992px) {
+			width: 150px;
+			height: 30px;
+		}
+	}
 }
 
 .container {
