@@ -12,76 +12,18 @@
 // components
 @import './components/buttons.scss';
 @import './components/input';
+@import './components/search';
+@import './components/checkbox';
+@import './components/dropdown';
+@import './components/profile';
+@import './components/addCard';
+@import './components/testCard';
 
 // layouts
 @import './layout/header';
 
 @import './layout/form';
 @import './layout/auth';
+@import './layout/testList';
 
 @import './layout/footer';
-
-.checkbox {
-	&:focus-within {
-		.checkbox__input {
-			outline: 1px solid black;
-		}
-	}
-	&__label {
-		cursor: pointer;
-		display: flex;
-		align-items: center;
-		gap: 15px;
-	}
-	&__input {
-		-webkit-appearance: none;
-		appearance: none;
-		margin: 0;
-		flex-shrink: 0;
-		width: 16px;
-		height: 16px;
-		border: 1px solid var(--green);
-		border-radius: 1px;
-		outline: none;
-		cursor: pointer;
-		position: relative;
-
-		&::before {
-			content: '';
-			position: absolute;
-			@include center;
-			font-size: 1.5em;
-			width: 12px;
-			height: 12px;
-			background-color: var(--green);
-			scale: 0;
-			transition: scale 150ms ease-in-out;
-		}
-
-		&:checked {
-			position: relative;
-			&::before {
-				scale: 1;
-			}
-		}
-
-		&.rounded {
-			border-radius: 50%;
-			&:checked {
-				&::before {
-					border-radius: 50%;
-					scale: 1;
-				}
-			}
-		}
-	}
-
-	&__text {
-		color: #343735;
-
-		font-family: Roboto;
-		font-size: 12px;
-		font-weight: 400;
-		line-height: 133.33%;
-	}
-}

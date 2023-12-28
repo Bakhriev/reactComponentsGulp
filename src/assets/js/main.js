@@ -1,3 +1,6 @@
-import {burgerMenu} from './functions/burger'
+const dropdown = document.querySelector('.dropdown')
+const toggle = document.querySelector('.dropdown__toggle')
 
-burgerMenu()
+toggle.addEventListener('click', () => {
+	dropdown.classList.toggle('dropdown_active')
+})

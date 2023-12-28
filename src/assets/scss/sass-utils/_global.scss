@@ -5,6 +5,21 @@ body {
 	font-weight: 400;
 }
 
+/* width */
+.customScroll::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+.customScroll::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+	background-color: #d4d4d4;
+	border-radius: 2px;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -22,7 +37,7 @@ body {
 		height: 48px;
 		width: 204px;
 		@media screen and (max-width: 992px) {
-			width: 150px;
+			width: 130px;
 			height: 30px;
 		}
 	}
@@ -31,7 +46,7 @@ body {
 .container {
 	margin: 0 auto;
 
-	max-width: 1430px;
+	max-width: 1750px;
 	padding: 0 15px;
 }
 
