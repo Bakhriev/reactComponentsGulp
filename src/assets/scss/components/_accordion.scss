@@ -1,0 +1,13 @@
+.accordion {
+	&__wrapper {
+		margin-top: 25px;
+		display: none;
+
+	}
+}
+
+.accordionActive {
+  .accordion__wrapper {
+    display: block;
+  }
+}

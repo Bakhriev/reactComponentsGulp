@@ -112,3 +112,24 @@
 		}
 	}
 }
+
+.btnArrow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+
+	&__text {
+		padding-left: 10px;
+		color: var(--black);
+		font-family: Inter;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	&__icon {
+		width: 16px;
+		height: 16px;
+	}
+}

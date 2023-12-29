@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>title</title>
+	</head>
+
+	<body>
+		<div class="draw">
+			<canvas id="canvas"></canvas>
+			<div class="panel">
+				<div class="logo panel__logo">
+					<img class="logo__img" src="./assets/img/logo.svg" alt="logo" />
+				</div>
+				<div class="panel__test">Тест номер 1</div>
+				<button>
+					<svg class="homeIcon">
+						<use href="./assets/img/svg/sprite.svg#home"></use>
+					</svg>
+				</button>
+			</div>
+
+			<div class="blockList">
+				<div class="blockList__title">Список блоков</div>
+				<div class="blockList__inner">
+					<button class="blockList__btn">
+						<svg class="blockList__icon">
+							<use href="./assets/img/svg/sprite.svg#plus"></use>
+						</svg>
+						<div class="blockList__name">Kafka</div>
+					</button>
+					<button class="blockList__btn">
+						<svg class="blockList__icon">
+							<use href="./assets/img/svg/sprite.svg#plus"></use>
+						</svg>
+						<div class="blockList__name">Kafka</div>
+					</button>
+				</div>
+			</div>
+
+			<div class="actions">
+				<button class="actionBtn">
+					<svg class="playIcon actionBtn__icon">
+						<use href="./assets/img/svg/sprite.svg#play"></use>
+					</svg>
+					<span class="actionBtn__text">Запустить</span>
+				</button>
+				<button class="actionBtn">
+					<svg class="actionBtn__icon saveIcon">
+						<use href="./assets/img/svg/sprite.svg#save"></use>
+					</svg>
+					<span class="actionBtn__text">Сохранить</span>
+				</button>
+				<button class="actionBtn">
+					<svg class="actionBtn__icon downloadIcon">
+						<use href="./assets/img/svg/sprite.svg#download"></use>
+					</svg>
+					<span class="actionBtn__text">Скачать</span>
+				</button>
+			</div>
+
+			<div class="settings">
+				<div class="settings__title">Настройки</div>
+				<div class="settings__inner">
+					<div class="field">
+						<div class="field__title">Текстовое поле<span>*</span></div>
+						<textarea
+							class="settings__textarea"
+							placeholder="Заполните текстовое поле"
+						></textarea>
+						<!-- <div class="helperText"></div> -->
+					</div>
+					<!--  -->
+					<div class="switchGroup">
+						<div class="switchGroup__wrapper">
+							<div class="switchGroup__title">Параметр</div>
+							<!--  -->
+							<label class="switch">
+								<input type="checkbox" />
+								<span class="switch__slider"></span>
+							</label>
+
+							<!--  -->
+						</div>
+						<!-- <div class="switchGroup__helperText">Вспомогательный текст</div> -->
+					</div>
+					<!--  -->
+					<div class="dropdown fullWidth">
+						<div class="dropdown__title">Название поля</div>
+
+						<div class="dropdown__inner">
+							<button class="dropdown__toggle fullWidth">
+								<input
+									tabindex="-1"
+									type="text"
+									class="dropdown__input"
+									placeholder="Не выбрано"
+									readonly
+									value=""
+								/>
+								<svg aria-hidden="true" tabindex="-1" class="dropdown__icon">
+									<use href="./assets/img/svg/sprite.svg#arrow"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="dropdown__popup">
+							<div class="dropdown__search search search_sm fullWidth">
+								<svg class="search__icon">
+									<use href="./assets/img/svg/sprite.svg#search"></use>
+								</svg>
+								<input
+									type="text"
+									class="search__input"
+									placeholder="Поиск..."
+								/>
+							</div>
+							<div class="dropdown__menu customScroll">
+								<button class="dropdown__item">Параметр 1</button>
+								<button class="dropdown__item">Параметр 1</button>
+								<button class="dropdown__item">Параметр 1</button>
+								<button class="dropdown__item">Параметр 1</button>
+								<button class="dropdown__item">Параметр 1</button>
+								<button class="dropdown__item">Параметр 1</button>
+								<button class="dropdown__item">Параметр 1</button>
+							</div>
+						</div>
+					</div>
+
+					<!--  -->
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="assets/js/main.js"></script>
+	</body>
+</html>
