@@ -101,6 +101,7 @@
 
 .textBtn_primary {
 	color: var(--green);
+	width: max-content;
 	&::before {
 		background-color: var(--green);
 	}
@@ -111,4 +112,3 @@
 		}
 	}
 }
-
