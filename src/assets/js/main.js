@@ -1,8 +1,11 @@
-const dropdown = document.querySelector('.dropdown')
-const toggle = document.querySelector('.dropdown__toggle')
+const dropdowns = document.querySelectorAll('.dropdown')
+const toggles = document.querySelectorAll('.dropdown__toggle')
 
-toggle?.addEventListener('click', () => {
-	dropdown.classList.toggle('dropdown_active')
+toggles.forEach(toggle => {
+	toggle.addEventListener('click', () => {
+		const dropdown = toggle.closest('.dropdown')
+		dropdown.classList.toggle('dropdown_active')
+	})
 })
 
 const popup = document.querySelector('.popup')

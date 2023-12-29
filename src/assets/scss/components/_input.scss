@@ -102,6 +102,11 @@
 	}
 }
 
+.eye {
+	width: 14px;
+	height: 14px;
+}
+
 .helperText {
 	display: none;
 
@@ -124,7 +129,7 @@
 			outline: 1px solid var(--green);
 		}
 	}
-	.title {
+	.field__title {
 		color: var(--green);
 	}
 	.eye {
@@ -149,7 +154,7 @@
 			outline: 1px solid var(--red);
 		}
 	}
-	.title {
+	.field__title {
 		color: var(--red);
 	}
 	.eye {

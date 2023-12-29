@@ -1,9 +1,4 @@
 .checkbox {
-	&:focus-within {
-		.checkbox__input {
-			outline: 1px solid black;
-		}
-	}
 	&__label {
 		cursor: pointer;
 		display: flex;
@@ -19,7 +14,6 @@
 		height: 16px;
 		border: 1px solid var(--green);
 		border-radius: 1px;
-		outline: none;
 		cursor: pointer;
 		position: relative;
 
@@ -41,16 +35,6 @@
 				scale: 1;
 			}
 		}
-
-		&.rounded {
-			border-radius: 50%;
-			&:checked {
-				&::before {
-					border-radius: 50%;
-					scale: 1;
-				}
-			}
-		}
 	}
 
 	&__text {
@@ -60,5 +44,14 @@
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 133.33%;
+	}
+}
+
+.checkbox_rounded {
+	.checkbox__input {
+		border-radius: 50%;
+		&::before {
+			border-radius: 50%;
+		}
 	}
 }

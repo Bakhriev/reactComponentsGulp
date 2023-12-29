@@ -58,6 +58,7 @@
 		position: absolute;
 		left: 0;
 		top: 100%;
+		z-index: 1;
 
 		padding: 10px;
 		max-width: 100%;
@@ -69,8 +70,8 @@
 		border-top-right-radius: 0px;
 		border-bottom-left-radius: 4px;
 		border-bottom-right-radius: 4px;
-
-		border: 1px solid #afafaf;
+		background-color: var(--white);
+		border: 1px solid var(--gray);
 	}
 
 	&__search {
@@ -114,13 +115,23 @@
 			scale: 0.97;
 		}
 	}
+
+	&__helperText {
+		margin-top: 10px;
+		color: var(--red);
+
+		font-family: Roboto;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 133.33%;
+	}
 }
 
 .dropdown_active {
 	.dropdown__inner {
 		border-bottom-left-radius: 0px;
 		border-bottom-right-radius: 0px;
-		border-bottom: none;
+		border-bottom-color: rgba(0, 0, 0, 0);
 	}
 	.dropdown__icon {
 		transform: rotate(180deg);
@@ -128,5 +139,11 @@
 	.dropdown__popup {
 		display: block;
 		border-top: none;
+	}
+}
+
+.dropdown_error {
+	.dropdown__popup {
+		top: 73%;
 	}
 }
