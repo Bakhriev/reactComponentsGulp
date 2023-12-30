@@ -2,24 +2,27 @@
 	&__wrapper {
 		margin-top: 25px;
 		display: none;
+	}
 
+	&__icon {
+		transition: 120ms ease-in-out;
 	}
 }
 
 .accordionActive {
-  .accordion__wrapper {
-    display: block;
-  }
+	.accordion__wrapper {
+		display: block;
+	}
+	.accordion__icon {
+		transform: rotate(-180deg);
+	}
 }
 
-
 .accordion {
-
 	&__wrapper {
 	}
 }
 .btnArrow {
-
 	&__text {
 	}
 

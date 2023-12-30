@@ -164,6 +164,9 @@
 			fill: var(--green);
 		}
 	}
+	&:active {
+		scale: 0.97;
+	}
 }
 
 .addBtn {
