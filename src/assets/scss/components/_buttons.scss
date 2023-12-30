@@ -145,11 +145,7 @@
 	}
 
 	&__text {
-		color: #343735;
-		font-family: Inter;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: normal;
+		color: var(--dark-gray);
 		transition: color 220ms ease-in-out;
 	}
 	@include hover {
@@ -194,8 +190,6 @@
 		color: var(--green);
 		font-family: Inter;
 		font-size: 14px;
-		font-weight: 400;
-		line-height: normal;
 		transition: color 220ms ease-in-out;
 	}
 }

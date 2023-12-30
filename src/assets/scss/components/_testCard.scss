@@ -35,20 +35,13 @@
 	&__title {
 		margin-bottom: 10px;
 		color: var(--black);
-		font-family: Inter;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: normal;
 		transition: color 220ms ease-in-out;
 		@include text-shorten(5);
 	}
 
 	&__description {
 		color: var(--gray);
-		font-family: Inter;
 		font-size: 12px;
-		font-weight: 400;
-		line-height: normal;
 		@include text-shorten(3);
 	}
 }

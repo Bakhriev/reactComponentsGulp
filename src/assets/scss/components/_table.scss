@@ -29,10 +29,7 @@
 		display: block;
 
 		color: var(--black);
-		font-family: Inter;
 		font-size: 14px;
-		font-weight: 400;
-		line-height: normal;
 
 		&:last-child {
 			color: #343735;
@@ -48,10 +45,7 @@
 		display: none;
 
 		color: var(--black);
-		font-family: Inter;
 		font-size: 14px;
-		font-weight: 400;
-		line-height: normal;
 		&::placeholder {
 			color: #d4d4d4;
 		}

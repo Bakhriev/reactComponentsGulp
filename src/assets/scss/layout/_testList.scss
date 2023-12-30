@@ -26,10 +26,8 @@
 	&__title {
 		flex-shrink: 0;
 		color: var(--black);
-		font-family: Inter;
 		font-size: 45px;
 		font-weight: 700;
-		line-height: normal;
 		@media screen and (max-width: 992px) {
 			font-size: 25px;
 		}
