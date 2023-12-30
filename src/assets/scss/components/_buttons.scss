@@ -133,3 +133,66 @@
 		height: 16px;
 	}
 }
+
+.actionBtn {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	user-select: none;
+
+	&__icon {
+	}
+
+	&__text {
+		color: #343735;
+		font-family: Inter;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: normal;
+		transition: color 220ms ease-in-out;
+	}
+	@include hover {
+		.actionBtn__text {
+			color: var(--green);
+		}
+		.playIcon {
+			stroke: var(--green);
+		}
+		.saveIcon,
+		.downloadIcon {
+			fill: var(--green);
+		}
+	}
+}
+
+.addBtn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	@include hover {
+		.addBtn__icon {
+			fill: var(--light-green);
+		}
+		.addBtn__text {
+			color: var(--light-green);
+		}
+	}
+
+	&__icon {
+		width: 8px;
+		height: 8px;
+		fill: var(--green);
+		transition: fill 220ms ease-in-out;
+	}
+
+	&__text {
+		color: var(--green);
+		font-family: Inter;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: normal;
+		transition: color 220ms ease-in-out;
+	}
+}

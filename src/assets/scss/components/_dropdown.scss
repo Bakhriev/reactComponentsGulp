@@ -20,6 +20,7 @@
 	}
 
 	&__toggle {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -57,7 +58,7 @@
 	&__popup {
 		position: absolute;
 		left: 0;
-		top: 100%;
+		top: 99%;
 		z-index: 1;
 
 		padding: 10px;
@@ -144,6 +145,6 @@
 
 .dropdown_error {
 	.dropdown__popup {
-		top: 73%;
+		top: 72%;
 	}
 }

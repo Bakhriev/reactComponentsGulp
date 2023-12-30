@@ -34,11 +34,6 @@
 	}
 }
 
-.homeIcon {
-	width: 20px;
-	height: 20px;
-}
-
 .blockList {
 	position: absolute;
 	top: 354px;
@@ -93,56 +88,10 @@
 
 	padding: 15px 30px;
 }
-.actionBtn {
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-	user-select: none;
-
-	&__icon {
-	}
-
-	&__text {
-		color: #343735;
-		font-family: Inter;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: normal;
-		transition: color 220ms ease-in-out;
-	}
-	@include hover {
-		.actionBtn__text {
-			color: var(--green);
-		}
-		.playIcon {
-			stroke: var(--green);
-		}
-		.saveIcon,
-		.downloadIcon {
-			fill: var(--green);
-		}
-	}
-}
-
-.playIcon,
-.saveIcon,
-.downloadIcon {
-	width: 12px;
-	height: 12px;
-	fill: #343735;
-	transition:
-		stroke 220ms ease-in-out,
-		fill 220ms ease-in-out;
-}
-
-.playIcon {
-	fill: transparent;
-	stroke: #343735;
-}
 
 .settings {
-	min-width: 420px;
+	max-width: 420px;
+	width: 100%;
 	position: absolute;
 	right: 100px;
 	top: 180px;

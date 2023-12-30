@@ -71,3 +71,24 @@ body {
 		font-size: 25px;
 	}
 }
+
+.playIcon,
+.saveIcon,
+.downloadIcon {
+	width: 12px;
+	height: 12px;
+	fill: #343735;
+	transition:
+		stroke 220ms ease-in-out,
+		fill 220ms ease-in-out;
+}
+
+.playIcon {
+	fill: transparent;
+	stroke: #343735;
+}
+
+.homeIcon {
+	width: 20px;
+	height: 20px;
+}
