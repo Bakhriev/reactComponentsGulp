@@ -209,16 +209,6 @@
 					@include('./assets/layout/components/addCard.html')
 					@include('./assets/layout/components/testCard.html')
 
-					<div class="checkbox">
-						<label class="checkbox__label">
-							<input class="checkbox__input" type="checkbox" />
-							<span class="checkbox__text"
-								>Для регистрации подтвердите согласие на обработку персональных
-								данных</span
-							>
-						</label>
-					</div>
-
 					<div class="checkbox checkbox_rounded">
 						<label class="checkbox__label">
 							<input class="checkbox__input" type="checkbox" />
@@ -239,35 +229,21 @@
 						</label>
 					</div>
 
+					@include('./assets/layout/components/checkbox.html')
+
 					<div class="checkbox">
 						<label class="checkbox__label">
 							<input class="checkbox__input" type="checkbox" />
-							<!-- <span class="checkbox__text"
-								>Для регистрации подтвердите согласие на обработку персональных
-								данных</span
-							> -->
 						</label>
-					</div>
-
-					<label class="switch">
-						<input type="checkbox" />
-						<span class="switch__slider"></span>
-					</label>
-
-					<div class="switchGroup">
-						<div class="switchGroup__wrapper">
-							<div class="switchGroup__title">Параметр</div>
-							<label class="switch">
-								<input type="checkbox" />
-								<span class="switch__slider"></span>
-							</label>
-						</div>
-						<div class="switchGroup__helperText">Вспомогательный текст</div>
 					</div>
 
 					@include('./assets/layout/components/popup.html')
 					@include('./assets/layout/components/table.html')
 					<!--  -->
+
+					@include('./assets/layout/components/accordion.html')
+					@include('./assets/layout/components/profile.html')
+					@include('./assets/layout/components/switchGroup.html')
 				</div>
 			</main>
 

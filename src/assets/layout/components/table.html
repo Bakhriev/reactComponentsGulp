@@ -1,14 +1,25 @@
 <div class="table">
 	<div class="table__item">
-		<div class="table__content">
-			<textarea placeholder="Пусто" class="table__input"></textarea>
-			<div class="table__value">Заполненное значение</div>
+		<div class="table__inner">
+			<div class="table__cell">
+				<button class="table__data">Ключ 1</button>
+				<input type="text" class="table__input" placeholder="Пусто" />
+			</div>
+			<div class="table__cell">
+				<button class="table__data">Заполненное значение</button>
+				<input type="text" class="table__input" placeholder="Пусто" />
+			</div>
 		</div>
+		<button class="table__btn">
+			<svg class="table__icon">
+				<use href="./assets/img/svg/sprite.svg#close"></use>
+			</svg>
+		</button>
 	</div>
+	<button class="table__add addBtn">
+		<svg class="addBtn__icon">
+			<use href="./assets/img/svg/sprite.svg#plus"></use>
+		</svg>
+		<span class="addBtn__text">Добавить строку</span>
+	</button>
 </div>
-
-<!-- <button class="table__btn">
-  <svg class="table__icon">
-    <use href="./assets/img/svg/sprite.svg#closeRed"></use>
-  </svg>
-</button> -->
