@@ -5,9 +5,11 @@
 		justify-content: space-between;
 		gap: 20px;
 		padding-left: 10px;
+		cursor: pointer;
 	}
 
 	&__title {
+		user-select: none;
 		color: var(--black);
 		font-family: Inter;
 		font-size: 16px;
