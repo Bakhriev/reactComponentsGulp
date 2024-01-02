@@ -108,6 +108,7 @@
 	}
 
 	&__helperText {
+		display: none;
 		padding-left: 10px;
 		margin-top: 10px;
 		color: var(--red);
@@ -135,5 +136,8 @@
 .dropdown_error {
 	.dropdown__popup {
 		top: 72%;
+	}
+	.dropdown__helperText {
+		display: block;
 	}
 }

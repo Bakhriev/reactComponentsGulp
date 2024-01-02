@@ -16,6 +16,7 @@
 	}
 
 	&__helperText {
+		display: none;
 		padding-left: 10px;
 		margin-top: 10px;
 		color: var(--red);
@@ -23,5 +24,11 @@
 		font-family: Inter;
 		font-size: 12px;
 		line-height: 133.33%;
+	}
+}
+
+.switchGroup_error {
+	.switchGroup__helperText {
+		display: block;
 	}
 }
